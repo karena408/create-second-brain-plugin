@@ -29,20 +29,18 @@ with only a `raw-notes/` folder.
 ### In Claude (Cowork / desktop)
 
 1. Open the **Cowork** tab → submenu → **Add plugin**.
-2. Add this marketplace by its GitHub repo (`<your-github-username>/build-second-brain-plugin`).
+2. Add this marketplace by its GitHub repo (`karena408/create-second-brain-plugin`).
 3. Find **build-second-brain** in the plugin browser and install it.
 
 ### In Claude Code (CLI)
 
 ```bash
 # 1. Add this repo as a marketplace (GitHub owner/repo shorthand)
-/plugin marketplace add <your-github-username>/build-second-brain-plugin
+/plugin marketplace add karena408/create-second-brain-plugin
 
 # 2. Install the plugin
 /plugin install build-second-brain@second-brain-marketplace
 ```
-
-> Replace `<your-github-username>` with wherever you push this repo.
 
 ## Use
 
