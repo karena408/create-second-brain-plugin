@@ -1,0 +1,26 @@
+{
+  "name": "second-brain-marketplace",
+  "owner": {
+    "name": "Karena Cai"
+  },
+  "description": "Tools for building and maintaining an LLM-owned 'second brain' wiki.",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "build-second-brain",
+      "source": "./plugins/build-second-brain",
+      "description": "Turn a folder of raw notes into a structured, interlinked second-brain wiki: scaffolds the canonical folder structure (CLAUDE.md, HOME.md, index.md, templates, helper-prompts) and restructures the notes into project/people/event/knowledge/idea pages.",
+      "category": "productivity",
+      "keywords": [
+        "second-brain",
+        "knowledge-base",
+        "wiki",
+        "notes",
+        "obsidian",
+        "pkm"
+      ]
+    }
+  ]
+}

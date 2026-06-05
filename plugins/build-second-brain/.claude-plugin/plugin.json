@@ -1,0 +1,17 @@
+{
+  "name": "build-second-brain",
+  "description": "Scaffold a personal 'second brain' LLM-wiki from a folder of raw notes, then restructure those notes into an interlinked markdown knowledge base (a project page per project, a person page per significant person, plus events / knowledge / ideas). Produces a CLAUDE.md/HOME.md/index.md skeleton identical to the canonical schema.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Karena Cai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "second-brain",
+    "knowledge-base",
+    "wiki",
+    "notes",
+    "obsidian",
+    "pkm"
+  ]
+}
