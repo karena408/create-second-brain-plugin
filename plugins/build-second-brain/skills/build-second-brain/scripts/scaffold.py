@@ -2,8 +2,8 @@
 """Scaffold the flat "second brain" LLM-wiki structure into a target folder.
 
 Creates the exact directory tree and copies the canonical skeleton files
-(CLAUDE.md, HOME.md, index.md, hotcache.md, log.md, wiki-fixes.md, the three
-Template.md files, and the helper-prompts) from this skill's assets/ directory.
+(CLAUDE.md, HOME.md, index.md, hotcache.md, log.md, wiki-fixes.md, and the three
+Template.md files) from this skill's assets/ directory.
 
 Design goals:
 - Idempotent and SAFE: never overwrites a file that already exists. Re-running
@@ -27,7 +27,6 @@ import sys
 GITKEEP_DIRS = [
     "daily-intake",
     "daily-intake-archive",
-    "raw-files",
     "ideas",
     "knowledge/Courses",
     "knowledge/Reading",
@@ -47,9 +46,6 @@ ASSET_FILES = [
     "hotcache.md",
     "log.md",
     "wiki-fixes.md",
-    "helper-prompts/andrej-llm-wiki.md",
-    "helper-prompts/daily-brew.md",
-    "helper-prompts/granola-intake.md",
     "projects/Template.md",
     "people/Template.md",
     "events/Template.md",
@@ -77,7 +73,6 @@ def main():
             created.append(os.path.join(d, ".gitkeep"))
     for d in TEMPLATE_DIRS:
         os.makedirs(os.path.join(target, d), exist_ok=True)
-    os.makedirs(os.path.join(target, "helper-prompts"), exist_ok=True)
 
     # 2. Copy skeleton files verbatim (never overwrite).
     for rel in ASSET_FILES:

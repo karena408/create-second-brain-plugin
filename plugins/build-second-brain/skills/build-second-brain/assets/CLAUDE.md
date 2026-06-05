@@ -13,12 +13,9 @@ second-brain/
 ├── index.md              ← catalog of every page, by category
 ├── hotcache.md           ← sliding window of the 5–8 most recently touched pages
 ├── log.md                ← chronological op log
-├── helper-prompts/
-│   └── create-llm-wiki.md   ← the originating "LLM Wiki" pattern + build spec
 ├── .claude/              ← Claude Code config (agents/, commands/, scripts/, skills/)
 ├── daily-intake/         ← raw daily-intake drop zone (processed by the intake agent)
 ├── daily-intake-archive/ ← processed intake files, kept for reference
-├── raw-files/            ← immutable source documents the wiki is built from (read-only)
 ├── digest/               ← daily intake digests + end-of-day recaps (created on first write)
 ├── projects/             ← active initiatives (one page each; see Template.md)
 ├── people/               ← person & org pages, CRM-shaped (see Template.md)
@@ -38,7 +35,7 @@ These four rules govern the working relationship. They override generic-assistan
 1. This file (`CLAUDE.md`).
 2. `HOME.md` — what's actually in motion.
 3. The latest file in `daily-intake/` — what's new since last session.
-4. The `Template.md` in the relevant subfolder (and `helper-prompts/create-llm-wiki.md`) — the page schema, if you'll be writing to the vault.
+4. The `Template.md` in the relevant subfolder — the page schema, if you'll be writing to the vault.
 5. Drill into `projects/`, `people/`, `knowledge/`, etc. as needed for the question at hand.
 
 ## Searching the wiki (use `index.md`)

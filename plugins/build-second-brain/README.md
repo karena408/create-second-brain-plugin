@@ -12,8 +12,8 @@ documented there.
 
 1. **Scaffold** — runs `skills/build-second-brain/scripts/scaffold.py`, which
    creates the canonical folder tree and copies the bundled skeleton files
-   (`CLAUDE.md`, `HOME.md`, `index.md`, `hotcache.md`, `log.md`, the three
-   `Template.md` files, and the helper-prompts) into the target `brain/` folder.
+   (`CLAUDE.md`, `HOME.md`, `index.md`, `hotcache.md`, `log.md`, and the three
+   `Template.md` files) into the target `brain/` folder.
    Idempotent and safe — it never overwrites a file that already exists, and
    never touches `raw-notes/`.
 2. **Restructure** — reads every file in `raw-notes/` and files it into

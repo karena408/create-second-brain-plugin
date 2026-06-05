@@ -80,10 +80,8 @@ brain/
 ├── hotcache.md            ← sliding window of the 5–8 most recently touched pages
 ├── log.md                 ← chronological op log
 ├── wiki-fixes.md          ← lint/fix notes (starts empty)
-├── helper-prompts/        ← andrej-llm-wiki.md (the pattern) · daily-brew.md · granola-intake.md
 ├── daily-intake/          ← raw drop zone for new intake (.gitkeep)
 ├── daily-intake-archive/  ← processed intake (.gitkeep)
-├── raw-files/             ← immutable read-only source docs (.gitkeep)
 ├── projects/Template.md   ← active initiatives
 ├── people/Template.md     ← person/org CRM pages
 ├── events/Template.md     ← per-event notes
@@ -101,9 +99,7 @@ Read, in this order, so you restructure to the right conventions:
 
 1. The **LLM Wiki pattern** — reproduced verbatim in the
    [appendix](#appendix-the-llm-wiki-pattern-verbatim) below (the *why*:
-   persistent compounding wiki, the three layers, ingest/query/lint). The
-   scaffold also drops a copy at `brain/helper-prompts/andrej-llm-wiki.md`, but
-   you already have it inline here — don't depend on the file.
+   persistent compounding wiki, the three layers, ingest/query/lint).
 2. The scaffolded `brain/CLAUDE.md` — the operating schema this wiki runs on
    (flat layout, frontmatter rules, naming, retrieval order, do's & don'ts).
 3. The three `Template.md` files (`projects/`, `people/`, `events/`) — the exact

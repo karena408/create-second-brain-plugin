@@ -12,7 +12,7 @@ When you invoke it inside a folder (e.g. `brain/`) that contains a `raw-notes/`
 subfolder, it:
 
 1. **Scaffolds** the canonical second-brain structure (`CLAUDE.md`, `HOME.md`,
-   `index.md`, `hotcache.md`, `log.md`, helper-prompts, and `projects/` /
+   `index.md`, `hotcache.md`, `log.md`, and `projects/` /
    `people/` / `events/` templates) — byte-identical to the source schema, via a
    deterministic, idempotent script that never overwrites existing files.
 2. **Restructures** your raw notes into pages — a project page per project, a
